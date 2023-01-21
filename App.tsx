@@ -1,20 +1,37 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
+import { useState } from 'react';
+import { mainStyles } from '@styles';
+import { GoalInput, GoalList } from '@components';
+import { Goal } from "@interfaces";
 
 export default function App() {
+  const [goals, setGoals] = useState([] as Goal[]);
+
+  function setGoalsHandler (goalText: string) {
+    setGoals(curentGoals => [
+      {
+        id:Math.floor((Math.random() * 10000000)).toString(),
+        name: goalText
+      },
+       ...curentGoals]
+    );
+  }
+
+  function deleteGoalHandler (id) {
+    setGoals( currentGoals =>  {
+      console.log(`DELETE item: ${id}`)
+      return currentGoals.filter( (goal) => {
+        return goal.id !== id;
+      })
+    })
+  }
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+    <View style={mainStyles.container}>
+      <GoalInput callback={setGoalsHandler}/>
+      <GoalList goals={goals} handleDelete={deleteGoalHandler}/>
       <StatusBar style="auto" />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
