@@ -11,6 +11,7 @@ export const GoalInput = ({callback}) => {
 
   function addGoalHandler () {
     callback(enteredGoal);
+    goalInputHandler('')
   }
 
   return (
@@ -20,6 +21,7 @@ export const GoalInput = ({callback}) => {
         placeholderTextColor={"#cccccc"}
         style={goalInputStyle.textEntry}
         onChangeText={goalInputHandler}
+        value={enteredGoal}
       />
       <Button 
         title="Add Goal"

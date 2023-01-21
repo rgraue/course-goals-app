@@ -31,7 +31,7 @@ export default function App() {
     <View style={mainStyles.container}>
       <GoalInput callback={setGoalsHandler}/>
       <GoalList goals={goals} handleDelete={deleteGoalHandler}/>
-      <StatusBar style="auto" />
+      <StatusBar style="inverted" />
     </View>
   );
 }
