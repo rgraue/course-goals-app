@@ -1,6 +1,6 @@
 import { View, FlatList } from 'react-native';
 import { listStyle } from '@styles';
-import { Item } from '@components';
+import { Item } from './item';
 import { Goal } from '@interfaces';
 
 export const GoalList = ({goals, handleDelete}) => {
@@ -11,7 +11,13 @@ export const GoalList = ({goals, handleDelete}) => {
         data={goals as Goal[]}
         renderItem={ (goal) => {
           return (
-            <Item goal={goal} handlePress={handleDelete} id={goal.item.id}/>
+            <View>
+              <Item 
+                goal={goal}
+                id={goal.item.id} 
+                goalDeleteHandler={handleDelete}
+              />
+            </View>
           )
         }}
         keyExtractor={(item) => {
