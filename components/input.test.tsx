@@ -1,8 +1,8 @@
 import React from 'react';
-import { create, act } from 'react-test-renderer';
+import { create } from 'react-test-renderer';
 import { GoalInput } from './input';
 
-function mockCallback () {
+function mockCallback() {
   console.log('hello world');
 }
 
@@ -13,7 +13,7 @@ describe('test test lol', () => {
 
   test('GoalInput Component', () => {
     const tree = create(<GoalInput callback={mockCallback} />);
-    
+
     expect(tree.toJSON()).toMatchSnapshot();
-  })
+  });
 });
