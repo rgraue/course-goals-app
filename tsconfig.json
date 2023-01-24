@@ -9,5 +9,6 @@
       "@components": ["components/index"],
       "@interfaces": ["interfaces/index"]
     }
-  }
+  },
+  "exclude": ["**/*.test.*"]
 }

@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo('linting and formatting...')
-npx eslint .
-npx prettier --write --config ./prettier.config.js .
+echo "linting and formatting..."
+npm run lint
+npm run prettier
+npm run test
