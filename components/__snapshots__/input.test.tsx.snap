@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test test lol GoalInput Component 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "borderBottomColor": "black",
+      "borderBottomWidth": 1,
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "marginBottom": "5%",
+      "marginLeft": "5%",
+      "marginRight": "5%",
+      "marginTop": "10%",
+    }
+  }
+>
+  <TextInput
+    onChangeText={[Function]}
+    placeholder="Your course goal"
+    placeholderTextColor="#cccccc"
+    style={
+      Object {
+        "borderBottomColor": "#cccccc",
+        "borderBottomWidth": 1,
+        "flex": 1,
+        "marginEnd": "10%",
+        "textAlign": "center",
+        "width": "60%",
+      }
+    }
+    value=""
+  />
+  <View
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#007AFF",
+              "fontSize": 18,
+              "margin": 8,
+              "textAlign": "center",
+            },
+            Object {
+              "color": "black",
+            },
+          ]
+        }
+      >
+        Add Goal
+      </Text>
+    </View>
+  </View>
+</View>
+`;
