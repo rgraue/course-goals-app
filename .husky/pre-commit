@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo('linting and formatting...')
+npx eslint .
+npx prettier --write --config ./prettier.config.js .

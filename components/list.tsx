@@ -3,27 +3,26 @@ import { listStyle } from '@styles';
 import { Item } from './item';
 import { Goal } from '@interfaces';
 
-export const GoalList = ({goals, handleDelete}) => {
-
+export const GoalList = ({ goals, handleDelete }) => {
   return (
     <View style={listStyle.container}>
-      <FlatList 
+      <FlatList
         data={goals as Goal[]}
-        renderItem={ (goal) => {
+        renderItem={(goal) => {
           return (
             <View>
-              <Item 
+              <Item
                 goal={goal}
-                id={goal.item.id} 
+                id={goal.item.id}
                 goalDeleteHandler={handleDelete}
               />
             </View>
-          )
+          );
         }}
         keyExtractor={(item) => {
-          return item.id
+          return item.id;
         }}
       />
     </View>
-  )
-}
+  );
+};
