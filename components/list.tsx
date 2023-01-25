@@ -3,7 +3,7 @@ import { listStyle } from '@styles';
 import { Item } from './item';
 import { Goal } from '@interfaces';
 
-export const GoalList = ({ goals, handleDelete }) => {
+export const List = ({ goals, handleDelete }) => {
   return (
     <View style={listStyle.container}>
       <FlatList
@@ -14,7 +14,7 @@ export const GoalList = ({ goals, handleDelete }) => {
               <Item
                 goal={goal}
                 id={goal.item.id}
-                goalDeleteHandler={handleDelete}
+                deleteHandler={handleDelete}
               />
             </View>
           );

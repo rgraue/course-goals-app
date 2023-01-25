@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { View } from 'react-native';
 import { useState } from 'react';
 import { mainStyles } from '@styles';
-import { GoalInput, GoalList } from '@components';
+import { Input, List } from '@components';
 import { Goal } from '@interfaces';
 
 export default function App() {
@@ -29,8 +29,8 @@ export default function App() {
 
   return (
     <View style={mainStyles.container}>
-      <GoalInput callback={setGoalsHandler} />
-      <GoalList goals={goals} handleDelete={deleteGoalHandler} />
+      <Input onPressHandler={setGoalsHandler} />
+      <List goals={goals} handleDelete={deleteGoalHandler} />
       <StatusBar style="inverted" />
     </View>
   );

@@ -14,7 +14,7 @@ export const GoalModal = ({
         <View style={modalStyle.textContainer}>
           <Text style={modalStyle.modalText}>{goal}</Text>
         </View>
-        <View style={modalStyle.buttonContainer}>
+        <View style={modalStyle.buttonsContainer}>
           <View style={modalStyle.buttonView}>
             <Button title="Close" onPress={closeModalHandler.bind(this, id)} />
           </View>

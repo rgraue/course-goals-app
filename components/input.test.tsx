@@ -1,13 +1,13 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
-import { GoalInput } from './input';
+import { Input } from './input';
 
 function mockCallback() {
   console.log('hello world');
 }
 
 test('GoalInput Component', () => {
-  const tree = create(<GoalInput callback={mockCallback} />);
+  const tree = create(<Input onPressHandler={mockCallback} />);
 
   expect(tree.toJSON()).toMatchSnapshot();
 });

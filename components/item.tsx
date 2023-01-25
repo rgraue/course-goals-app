@@ -3,18 +3,17 @@ import { itemStyle } from '@styles';
 import { useState } from 'react';
 import { GoalModal } from './modal';
 
-export const Item = ({ goal, id, goalDeleteHandler }) => {
+export const Item = ({ goal, id, deleteHandler }) => {
   const [isModalVisible, switchModalVisible] = useState(false);
 
-  function swapModalView(id) {
-    console.log(isModalVisible, id);
+  function swapModalView() {
     switchModalVisible((currentValue) => !currentValue);
   }
 
   return (
     <View>
       <Pressable
-        onPress={swapModalView.bind(this, goal.item.name)}
+        onPress={swapModalView.bind(this)}
         style={({ pressed }) => pressed && itemStyle.pressedItem}
       >
         <View style={itemStyle.container}>
@@ -25,7 +24,7 @@ export const Item = ({ goal, id, goalDeleteHandler }) => {
         goal={goal.item.name}
         isVisible={isModalVisible}
         closeModalHandler={swapModalView}
-        deleteGoalHandler={goalDeleteHandler}
+        deleteGoalHandler={deleteHandler}
         id={id}
       />
     </View>

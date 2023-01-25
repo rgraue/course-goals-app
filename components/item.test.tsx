@@ -20,7 +20,7 @@ test('GoalItem Component', () => {
     <Item
       id={mockGoal.item?.id}
       goal={mockGoal}
-      goalDeleteHandler={mockDeleteHandler}
+      deleteHandler={mockDeleteHandler}
     />,
   );
 

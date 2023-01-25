@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-export const goalInputStyle = StyleSheet.create({
+export const inputStyle = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
@@ -13,7 +13,7 @@ export const goalInputStyle = StyleSheet.create({
     borderBottomColor: 'black',
     borderBottomWidth: 1,
   },
-  textEntry: {
+  textInput: {
     flex: 1,
     width: '60%',
     borderBottomColor: '#cccccc',
