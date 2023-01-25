@@ -13,18 +13,19 @@ exports[`GoalInput Component 1`] = `
       "marginBottom": "5%",
       "marginLeft": "5%",
       "marginRight": "5%",
-      "marginTop": "10%",
+      "marginTop": "15%",
     }
   }
 >
   <TextInput
     onChangeText={[Function]}
-    placeholder="Your course goal"
+    placeholder="Enter Goal"
     placeholderTextColor="#cccccc"
     style={
       Object {
         "borderBottomColor": "#cccccc",
         "borderBottomWidth": 1,
+        "color": "white",
         "flex": 1,
         "marginEnd": "10%",
         "textAlign": "center",
@@ -68,7 +69,7 @@ exports[`GoalInput Component 1`] = `
               "textAlign": "center",
             },
             Object {
-              "color": "black",
+              "color": "#A396B0",
             },
           ]
         }

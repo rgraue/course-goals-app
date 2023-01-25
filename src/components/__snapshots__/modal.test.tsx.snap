@@ -11,7 +11,7 @@ exports[`Modal Component 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "backgroundColor": "#D9C3D9",
+        "backgroundColor": "#A396B0",
         "borderRadius": 5,
         "flexDirection": "column",
         "height": "12%",

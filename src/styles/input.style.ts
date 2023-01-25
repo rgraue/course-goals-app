@@ -20,6 +20,6 @@ export const inputStyle = StyleSheet.create({
     borderBottomWidth: 1,
     textAlign: 'center',
     marginEnd: '10%',
-    color: 'white'
+    color: 'white',
   },
 });

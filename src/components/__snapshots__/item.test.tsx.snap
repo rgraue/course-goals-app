@@ -25,7 +25,7 @@ exports[`GoalItem Component 1`] = `
           "color": "black",
           "fontSize": 18,
           "marginBottom": 10,
-          "padding": 5,
+          "padding": 10,
           "textAlign": "left",
         }
       }
