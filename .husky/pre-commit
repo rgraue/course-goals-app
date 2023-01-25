@@ -4,4 +4,4 @@
 echo "linting and formatting..."
 npm run lint
 npm run prettier
-npm run test
+npm run test -- -color --silent
