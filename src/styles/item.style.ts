@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 export const itemStyle = StyleSheet.create({
   container: {
     textAlign: 'left',
-    padding: 5,
+    padding: 10,
     marginBottom: 10,
     fontSize: 18,
     backgroundColor: 'grey',

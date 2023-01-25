@@ -8,7 +8,7 @@ export const inputStyle = StyleSheet.create({
     marginLeft: '5%',
     marginRight: '5%',
     marginBottom: '5%',
-    marginTop: '10%',
+    marginTop: '15%',
     justifyContent: 'center',
     borderBottomColor: 'black',
     borderBottomWidth: 1,
@@ -20,5 +20,6 @@ export const inputStyle = StyleSheet.create({
     borderBottomWidth: 1,
     textAlign: 'center',
     marginEnd: '10%',
+    color: 'white'
   },
 });

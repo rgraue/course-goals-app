@@ -2,27 +2,27 @@ import { inputStyle } from '@styles';
 import { TextInput, View, Button } from 'react-native';
 import { useState } from 'react';
 
-export const Input = ({ onPressHandler }) => {
+export const Input = ({ handlerEnteredText }) => {
   const [enteredText, setEnteredText] = useState('');
 
   function textInputHandler(enteredGoal: string) {
     setEnteredText(enteredGoal);
   }
 
+  const onPressHandler = () => {
+    handlerEnteredText(enteredText);
+  };
+
   return (
     <View style={inputStyle.container}>
       <TextInput
-        placeholder="Your course goal"
+        placeholder="Enter Goal"
         placeholderTextColor={'#cccccc'}
         style={inputStyle.textInput}
         onChangeText={textInputHandler}
         value={enteredText}
       />
-      <Button
-        title="Add Goal"
-        color={'black'}
-        onPress={onPressHandler(enteredText) && textInputHandler('')}
-      />
+      <Button title="Add Goal" color={'#A396B0'} onPress={onPressHandler} />
     </View>
   );
 };

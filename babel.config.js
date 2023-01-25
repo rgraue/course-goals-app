@@ -8,10 +8,10 @@ module.exports = function (api) {
         {
           alias: {
             '@styles': ([, name]) => {
-              return './styles/';
+              return './src/styles/';
             },
             '@components': ([, name]) => {
-              return './components/';
+              return './src/components/';
             },
           },
         },

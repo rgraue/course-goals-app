@@ -7,7 +7,7 @@ function mockCallback() {
 }
 
 test('GoalInput Component', () => {
-  const tree = create(<Input onPressHandler={mockCallback} />);
+  const tree = create(<Input handlerEnteredText={mockCallback} />);
 
   expect(tree.toJSON()).toMatchSnapshot();
 });

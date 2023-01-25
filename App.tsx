@@ -8,7 +8,7 @@ import { Goal } from '@interfaces';
 export default function App() {
   const [goals, setGoals] = useState([] as Goal[]);
 
-  function setGoalsHandler(goalText: string) {
+  function addGoalHandler(goalText: string) {
     setGoals((curentGoals) => [
       {
         id: Math.floor(Math.random() * 10000000).toString(),
@@ -29,7 +29,7 @@ export default function App() {
 
   return (
     <View style={mainStyles.container}>
-      <Input onPressHandler={setGoalsHandler} />
+      <Input handlerEnteredText={addGoalHandler} />
       <List goals={goals} handleDelete={deleteGoalHandler} />
       <StatusBar style="inverted" />
     </View>

@@ -5,7 +5,7 @@ export const modalStyle = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#D9C3D9',
+    backgroundColor: '#A396B0',
     height: '12%',
     marginTop: '70%',
     margin: '5%',
@@ -25,7 +25,7 @@ export const modalStyle = StyleSheet.create({
     fontSize: 20,
     textAlign: 'center',
   },
-  buttonContainer: {
+  buttonsContainer: {
     flexDirection: 'row',
   },
   buttonView: {
