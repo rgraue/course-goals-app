@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GoalItem Component 1`] = `
+<View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={false}
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "grey",
+          "borderRadius": 10,
+          "color": "black",
+          "fontSize": 18,
+          "marginBottom": 10,
+          "padding": 5,
+          "textAlign": "left",
+        }
+      }
+    >
+      <Text>
+        test goal name
+      </Text>
+    </View>
+  </View>
+  <Modal
+    animationType="slide"
+    hardwareAccelerated={false}
+    transparent={true}
+    visible={false}
+  />
+</View>
+`;

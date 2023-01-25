@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Goal List component 1`] = `
+<View
+  style={
+    Object {
+      "flex": 9,
+      "padding": 5,
+      "width": "85%",
+    }
+  }
+>
+  <RCTScrollView
+    data={
+      Array [
+        Object {
+          "item": Object {
+            "id": "2",
+            "name": "test goal name",
+          },
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    viewabilityConfigCallbackPairs={Array []}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <View>
+            <View
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={false}
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "grey",
+                    "borderRadius": 10,
+                    "color": "black",
+                    "fontSize": 18,
+                    "marginBottom": 10,
+                    "padding": 5,
+                    "textAlign": "left",
+                  }
+                }
+              >
+                <Text />
+              </View>
+            </View>
+            <Modal
+              animationType="slide"
+              hardwareAccelerated={false}
+              transparent={true}
+              visible={false}
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
