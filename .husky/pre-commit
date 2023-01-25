@@ -2,6 +2,12 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 echo "linting and formatting..."
+# run linting and formating
 npm run lint
 npm run prettier
+
+# ensure untracked files changed by formatting are added to commit
+git add .
+
+# jest test
 npm run test -- --silent
