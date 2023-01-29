@@ -32,9 +32,10 @@ exports[`GoalInput Component 1`] = `
         "width": "60%",
       }
     }
-    value=""
+    value="test"
   />
   <View
+    accessibilityLabel="Text Btn"
     accessibilityRole="button"
     accessible={true}
     collapsable={false}

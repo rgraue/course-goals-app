@@ -22,7 +22,12 @@ export const Input = ({ handlerEnteredText }) => {
         onChangeText={textInputHandler}
         value={enteredText}
       />
-      <Button title="Add Goal" color={'#A396B0'} onPress={onPressHandler} />
+      <Button
+        title="Add Goal"
+        color={'#A396B0'}
+        accessibilityLabel="Text Btn"
+        onPress={onPressHandler}
+      />
     </View>
   );
 };
