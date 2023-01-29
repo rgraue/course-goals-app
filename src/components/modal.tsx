@@ -16,11 +16,16 @@ export const GoalModal = ({
         </View>
         <View style={modalStyle.buttonsContainer}>
           <View style={modalStyle.buttonView}>
-            <Button title="Close" onPress={closeModalHandler.bind(this, id)} />
+            <Button
+              title="Close"
+              accessibilityLabel="Close Btn"
+              onPress={closeModalHandler.bind(this, id)}
+            />
           </View>
           <View style={modalStyle.buttonView}>
             <Button
               title="Goal Completed"
+              accessibilityLabel="Delete Btn"
               onPress={deleteGoalHandler.bind(this, id)}
             />
           </View>

@@ -62,6 +62,7 @@ exports[`Modal Component 1`] = `
         }
       >
         <View
+          accessibilityLabel="Close Btn"
           accessibilityRole="button"
           accessible={true}
           collapsable={false}
@@ -112,6 +113,7 @@ exports[`Modal Component 1`] = `
         }
       >
         <View
+          accessibilityLabel="Delete Btn"
           accessibilityRole="button"
           accessible={true}
           collapsable={false}

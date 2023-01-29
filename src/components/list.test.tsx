@@ -13,14 +13,8 @@ const mockGoal: Partial<ListRenderItemInfo<Goal>>[] = [
   },
 ];
 
-function mockDeleteHandler() {
-  console.log('DELETE');
-}
-
 test('Goal List component', () => {
-  const tree = create(
-    <List goals={mockGoal} handleDelete={mockDeleteHandler} />,
-  );
+  const tree = create(<List goals={mockGoal} handleDelete={jest.fn} />);
 
   expect(tree).toMatchSnapshot();
 });

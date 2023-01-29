@@ -1,12 +1,10 @@
 import React from 'react';
 import { ListRenderItemInfo } from 'react-native';
-import { create } from 'react-test-renderer';
+import { render } from '@testing-library/react-native';
 import { Item } from './item';
 import { Goal } from '../interfaces';
 
-function mockDeleteHandler() {
-  console.log('DELETE');
-}
+const mockFunc = jest.fn();
 
 const mockGoal: Partial<ListRenderItemInfo<Goal>> = {
   item: {
@@ -15,13 +13,9 @@ const mockGoal: Partial<ListRenderItemInfo<Goal>> = {
   },
 };
 
-test('GoalItem Component', () => {
-  const tree = create(
-    <Item
-      id={mockGoal.item?.id}
-      goal={mockGoal}
-      deleteHandler={mockDeleteHandler}
-    />,
+test('GoalItem Component', async () => {
+  const tree = render(
+    <Item id={mockGoal.item?.id} goal={mockGoal} deleteHandler={mockFunc} />,
   );
 
   expect(tree.toJSON()).toMatchSnapshot();
